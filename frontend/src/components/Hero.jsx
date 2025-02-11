@@ -14,7 +14,7 @@ const Hero = () => {
       title: "LG Smart TV",
       description: "Find the perfect gift for everyone",
       bg: "bg-pink-200",
-      colSpan: "col-span-2", // Spans 2 columns
+      colSpan: "lg:col-span-2", // Spans 2 columns only on large screens
     },
     {
       image: displayImages.sneakers,
@@ -49,7 +49,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-6 p-6">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
       {products.map((product, index) => (
         <div
           key={index}
@@ -58,7 +58,6 @@ const Hero = () => {
           } hover:shadow-xl transform hover:scale-105 transition-all duration-300 ${
             product.colSpan || ""
           }`}
-          style={product.style ? { width: "80%", margin: "0 auto" } : {}}
         >
           {/* Image */}
           <img

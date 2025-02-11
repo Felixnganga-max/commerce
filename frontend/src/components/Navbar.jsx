@@ -40,7 +40,7 @@ const Navbar = () => {
 
       {/* Search bar on larger screens */}
       <div
-        className={`relative w-1/2 lg:block ${isMenuOpen ? "block" : "hidden"}`}
+        className={`relative w-1/2 md:hidden lg:block ${isMenuOpen ? "block" : "hidden"}`}
       >
         <input
           type="text"

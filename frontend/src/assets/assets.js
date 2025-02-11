@@ -24,10 +24,39 @@ import blender from "./images/blender.webp";
 import espresso from "./images/espresso.avif";
 import microwave from "./images/microwave.webp";
 import robotvacuum from "./images/robotvacuum.webp";
+import dress from "./images/dress.jpg";
+import flannel from "./images/flannel.jpg";
+import hoodiy from "./images/hoodie.jpg";
+import tshirt from "./images/t-shirts.jpg";
+import jacket from "./images/jacket.jpg";
+import cards from "./images/cards.jpg";
+import necklace from "./images/necklace.jpg";
+import perfume from "./images/perfume.jpg";
+import back from "./images/back.jpg";
+import flowers from "./images/flowers.jpg";
+import massage from "./images/massage.webp";
+import skin from "./images/skin.webp";
+import beard from "./images/beard.jpg";
+import hair from "./images/hair.jpg";
+import toothbrush from "./images/toothbrush.jpg";
 
-// Exporting the object
 const displayImages = {
   beauty,
+  toothbrush,
+  beard,
+  skin,
+  massage,
+  hair,
+  flowers,
+  back,
+  perfume,
+  cards,
+  necklace,
+  dress,
+  flannel,
+  jacket,
+  hoodiy,
+  tshirt,
   blender,
   robotvacuum,
   espresso,
@@ -152,7 +181,7 @@ export const commerceItems = [
     description:
       "Comfortable and stylish hoodie made from premium cotton blend.",
     category: "Clothes",
-    image: "images/clothes/hoodie.jpg",
+    image: hoodiy,
   },
   {
     id: 12,
@@ -160,75 +189,75 @@ export const commerceItems = [
     price: 59.99,
     description: "Elegant evening dress perfect for special occasions.",
     category: "Clothes",
-    image: "images/clothes/dress.jpg",
+    image: dress,
   },
   {
     id: 13,
-    name: "Running Shoes",
+    name: "Flannel Shirt",
     price: 79.99,
     description: "Lightweight and durable running shoes for everyday training.",
     category: "Clothes",
-    image: "images/clothes/shoes.jpg",
+    image: flannel,
   },
   {
     id: 14,
-    name: "Winter Jacket",
+    name: "Quality T-Shirts",
     price: 99.99,
     description:
       "Insulated winter jacket designed to keep you warm in cold weather.",
     category: "Clothes",
-    image: "images/clothes/jacket.jpg",
+    image: tshirt,
   },
   {
     id: 15,
-    name: "Baseball Cap",
+    name: "Jackets",
     price: 19.99,
     description: "Stylish adjustable cap with breathable fabric.",
     category: "Clothes",
-    image: "images/clothes/cap.jpg",
+    image: jacket,
   },
 
   // Gifts
   {
     id: 16,
-    name: "Luxury Watch",
+    name: "Cards",
     price: 299.99,
     description: "Premium stainless steel watch with elegant design.",
     category: "Gifts",
-    image: "images/gifts/watch.jpg",
+    image: cards,
   },
   {
     id: 17,
-    name: "Scented Candle Set",
+    name: "Scented Flowers Set",
     price: 24.99,
     description:
       "A set of beautifully scented candles to create a relaxing atmosphere.",
     category: "Gifts",
-    image: "images/gifts/candles.jpg",
+    image: flowers,
   },
   {
     id: 18,
-    name: "Personalized Mug",
+    name: "Luxurious Necklace",
     price: 14.99,
     description: "Customizable coffee mug with name or message engraving.",
     category: "Gifts",
-    image: "images/gifts/mug.jpg",
+    image: necklace,
   },
   {
     id: 19,
-    name: "Photo Frame",
+    name: "Scented Perfume",
     price: 29.99,
     description: "Classic wooden photo frame perfect for displaying memories.",
     category: "Gifts",
-    image: "images/gifts/photoframe.jpg",
+    image: perfume,
   },
   {
     id: 20,
-    name: "Gift Card",
+    name: "Back Scratcher",
     price: 50.0,
     description: "Digital gift card that can be used for various purchases.",
     category: "Gifts",
-    image: "images/gifts/giftcard.jpg",
+    image: back,
   },
 
   // Personal Care
@@ -239,7 +268,7 @@ export const commerceItems = [
     description:
       "Rechargeable electric toothbrush with multiple cleaning modes.",
     category: "Personal Care",
-    image: "images/personalcare/toothbrush.jpg",
+    image: toothbrush,
   },
   {
     id: 22,
@@ -248,7 +277,7 @@ export const commerceItems = [
     description:
       "Professional hair straightener with adjustable temperature settings.",
     category: "Personal Care",
-    image: "images/personalcare/straightener.jpg",
+    image: hair,
   },
   {
     id: 23,
@@ -256,7 +285,7 @@ export const commerceItems = [
     price: 34.99,
     description: "Complete beard grooming kit with trimmer, oil, and comb.",
     category: "Personal Care",
-    image: "images/personalcare/beardkit.jpg",
+    image: beard,
   },
   {
     id: 24,
@@ -265,7 +294,7 @@ export const commerceItems = [
     description:
       "Full skincare set including cleanser, moisturizer, and serum.",
     category: "Personal Care",
-    image: "images/personalcare/skincare.jpg",
+    image: skin,
   },
   {
     id: 25,
@@ -273,6 +302,6 @@ export const commerceItems = [
     price: 99.99,
     description: "Deep tissue massage gun for muscle relaxation and recovery.",
     category: "Personal Care",
-    image: "images/personalcare/massagegun.jpg",
+    image: massage,
   },
 ];

@@ -1,17 +1,25 @@
 import React from "react";
 import { commerceItems } from "../assets/assets";
-import { FaPlus, FaHeart } from "react-icons/fa"; // Importing icons for add and like
+import { FaPlus, FaHeart } from "react-icons/fa";
 
-const Electronics = () => {
-  // Filter items where the category is 'electronics'
-  const electronicsItems = commerceItems.filter(
-    (item) => item.category === "Electronics"
+const PersonalCare = () => {
+  // Filter items where the category is 'Personal Care'
+  const personalCareItems = commerceItems.filter(
+    (item) => item.category === "Personal Care"
   );
 
   return (
     <div className="p-5 text-center">
+      <div className="flex justify-between items-center mb-16">
+        <h1 className="text-3xl font-bold text-gray-800">
+          Luxury Self-Care Essentials
+        </h1>
+        <a href="#" className="text-blue-500 hover:underline">
+          See More
+        </a>
+      </div>
       <div className="grid gap-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 md:gap-6">
-        {electronicsItems.map((item, index) => (
+        {personalCareItems.map((item, index) => (
           <div
             key={index}
             className="relative -mt-10 bg-white shadow-lg rounded-lg overflow-hidden transform transition-all duration-300 hover:scale-y-95 py-2"
@@ -38,4 +46,4 @@ const Electronics = () => {
   );
 };
 
-export default Electronics;
+export default PersonalCare;
